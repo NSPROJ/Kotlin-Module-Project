@@ -42,4 +42,9 @@ class ArchiveScreen(val archive: Archive, val scanner: Scanner) {
                 println("Поле пустое, попробуйте еще раз.")
             }
         }
-}}
+
+        val newNote = Note(title, content)
+        archive.addNote(newNote)
+        println("Заметка успешно создана.")
+    }
+}
